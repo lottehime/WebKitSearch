@@ -19,9 +19,16 @@
 
 
 echo "Unattended WebKit Mirror Commit Searcher"
+echo 
 
-read -p "Press [Enter] key to continue..."
+read -p "Press [Enter] key to begin..."
 
 for sha1 in $(git rev-list HEAD -i --grep="$1"); do
     python -mwebbrowser https://github.com/WebKit/webkit/commit/$sha1 >/dev/null 2>/dev/null
+
+echo "Done, thanks for using."
+echo 
+
+read -p "Press [Enter] key to continue..."
+    
 done
