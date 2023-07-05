@@ -9,6 +9,7 @@ This is designed to help hunt for vulnerabilities to leverage in projects.
 Usage
 -------
 
+- Clone the WebKit git repo.
 - Place the script in your desired location and make it executable with `chmod +x`.
 - Edit your `~/.bashrc` file with your favourite editor and add the alias `alias webkitsearch='/YOUR_PATH/webkitsearch.sh'`, where `YOUR_PATH` is the location you have the script in.
 - Navigate to your repo and execute the following from terminal `webkitsearch "my search terms"`,  where `"my search terms"` are what you intend to look for. For instance `use-after-free` .
